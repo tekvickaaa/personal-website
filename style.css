@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Source Serif 4", serif;
+}
+
+.wrapper {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: clamp(20px, 5vw, 125px);
+    padding-right: clamp(20px, 5vw, 125px);
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    background-color: #2C1A15;
+    color: #F8E8E0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 12px;
+}
+
+.projects h2 {
+    margin: 0px 0 16px 0;
+}
+
+.projects {
+    color: #F8E8E0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.myworks {
+    background-color: #2C1A15;
+    padding-top: 125px;
+    padding-bottom: 60px;
+}
+
+.project {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about {
+    background-color: #F8E8E0;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(24px, 4vw, 50px);
+    flex-wrap: wrap;
+}
+
+.about2 h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    color: #2C1A15;
+}
+
+.about2 p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.about2 p:last-child {
+    margin-bottom: 0;
+}
+
+.about2 {
+    width: 100%;
+    max-width: 685px;
+    flex: 1 1 400px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 685px;
+    height: auto;
+    aspect-ratio: 685 / 650;
+    object-fit: cover;
+    flex: 1 1 400px;
+}
+
+main h1 {
+    margin: 0;
+    margin-top: -20px;
+    font-size: 18vw;
+    line-height: 0.8;
+    white-space: nowrap;
+    transform: scaleX(1.05); 
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 85vh;
+    width: auto;
+    max-width: 90vw;
+    z-index: 10;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+footer {
+    color: #F8E8E0;
+    background-color: #2C1A15;
+    padding: 0 125px 0 125px;
+    display: flex;
+    justify-content: space-between;
+}
