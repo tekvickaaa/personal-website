@@ -57,6 +57,25 @@ main {
     display: block;
 }
 
+.project::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff20;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
 .about {
     background-color: #F8E8E0;
     padding-top: 125px;
